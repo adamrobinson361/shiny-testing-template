@@ -1,0 +1,10 @@
+language: r
+install:
+  - R -e "0" --args --bootstrap-packrat
+cache:
+  directories:
+    - $TRAVIS_BUILD_DIR/packrat/src
+    - $TRAVIS_BUILD_DIR/packrat/lib
+  packages: true
+script: 
+- R -e "shiny::runApp('~/Travis')"
