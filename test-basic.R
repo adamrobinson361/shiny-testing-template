@@ -16,7 +16,7 @@ remDr <- remoteDriver$new(remoteServerAddr = ip, port = port, browserName = rdBr
                           , extraCapabilities = extraCapabilities)
 
 remDr$open(silent = TRUE)
-appURL <- "http://shinyserver:6012"
+appURL <- "http://localhost:6012"
 
 test_that("can connect to app", {  
   remDr$navigate(appURL)
