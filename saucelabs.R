@@ -16,22 +16,8 @@ remDr <- remoteDriver$new(remoteServerAddr = ip, port = port, browserName = rdBr
 
 testScript <- function(remDr){
   remDr$open()
-  remDr$navigate("http://www.google.com/ncr")
-  Sys.sleep(2)
-  # highlight the query box
-  remDr$findElement("name", "q")$highlightElement()
-  Sys.sleep(2)
-  # goto rproject
-  remDr$navigate("http://www.r-project.org")
-  # go Back
-  remDr$goBack()
-  # go Forward
-  remDr$goForward()
-  Sys.sleep(2)
-  webElems <- remDr$findElements("css selector", "frame")
-  # highlight the frames
-  lapply(webElems, function(x){x$highlightElement()})
-  
+  remDr$navigate("http://localhost:3006")
+  Sys.sleep(10)
   remDr$close()
 }
 
