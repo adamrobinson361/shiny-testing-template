@@ -16,7 +16,7 @@ remDr <- remoteDriver$new(remoteServerAddr = ip, port = port, browserName = rdBr
 
 testScript <- function(remDr){
   remDr$open()
-  remDr$navigate("http://localhost:3006")
+  remDr$navigate("http://127.0.0.1:6012")
   Sys.sleep(10)
   remDr$close()
 }
