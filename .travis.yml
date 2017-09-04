@@ -7,4 +7,4 @@ cache:
     - $TRAVIS_BUILD_DIR/packrat/lib
   packages: true
 script: 
-- R -e "shiny::runApp('~/Travis')"
+- Rscript -e 'library(methods); shiny::runApp("Unit 1 CS/", launch.browser=TRUE)'
