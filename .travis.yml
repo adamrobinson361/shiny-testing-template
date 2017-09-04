@@ -8,3 +8,4 @@ cache:
   packages: true
 script: 
 - R --slave --no-restore -e 'shiny::runApp()'
+- R --slave --no-restore -e 'shiny::stopApp()'
