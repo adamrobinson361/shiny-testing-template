@@ -1,4 +1,5 @@
 library(RSelenium)
+library(testthat)
 
 user <- "adamrobinson361" # Your Sauce Labs username
 pass <- "557fd7e6-badb-4989-a531-61502fb9f837" # Your Sauce Labs access key 
@@ -22,4 +23,5 @@ test_that("can connect to app", {
   appTitle <- remDr$getTitle()[[1]]
   expect_equal(appTitle, "Old Faithful Geyser Data")  
 })
-testScript(remDr)
+
+remDr$close()
