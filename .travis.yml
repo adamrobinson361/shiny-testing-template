@@ -14,4 +14,6 @@ script:
   - nohup R --slave --no-restore -e 'shiny::runApp(port = 6012)' &
   - R -f test-basic.R
 addons:
-  sauce_connect: true 
+  sauce_connect:
+    username: adamrobinson361
+    access_key: "557fd7e6-badb-4989-a531-61502fb9f837"

@@ -8,9 +8,9 @@ ip <- paste0(user, ':', pass, "@localhost")
 rdBrowser <- "firefox"
 version <- "26"
 platform <- "Linux"
-extraCapabilities <- list(name = "RSelenium OS/Browsers vignette second example", username = user
-                          , accessKey = pass, tags = list("RSelenium-vignette", 
-                                                          "OS/Browsers-vignette", "Example 2"))
+extraCapabilities <- list(name = "R Shiny Testing", username = user
+                          , accessKey = pass, tags = list("R", 
+                                                          "Travis", "Shiny"))
 remDr <- remoteDriver$new(remoteServerAddr = ip, port = port, browserName = rdBrowser
                           , version = version, platform = platform
                           , extraCapabilities = extraCapabilities)
