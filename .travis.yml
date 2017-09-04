@@ -12,7 +12,7 @@ cache:
   packages: true
 script: 
   - nohup R --slave --no-restore -e 'shiny::runApp(port = 3006)'
-  - R -f tests/test-basic.R
+  - R -f test-basic.R
 addons:
   sauce_connect:
     username: adamrobinson361
