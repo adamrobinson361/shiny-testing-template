@@ -1,17 +1,60 @@
 PackratFormat: 1.4
 PackratVersion: 0.4.8.1
-RVersion: 3.3.3
+RVersion: 3.4.0
 Repos: CRAN=https://cran.rstudio.com/
+
+Package: BH
+Source: CRAN
+Version: 1.65.0-1
+Hash: 95f62be4d6916aae14a310a8b56a6475
 
 Package: R6
 Source: CRAN
 Version: 2.2.2
 Hash: b2366cd9d2f3851a5704b4e192b985c2
 
+Package: RSelenium
+Source: CRAN
+Version: 1.7.1
+Hash: df30e4b7228823c97f5c2fc6da269575
+Requires: XML, binman, caTools, httr, openssl, wdman
+
 Package: Rcpp
 Source: CRAN
 Version: 0.12.12
 Hash: 8b3d5ebb9a9a4ab5c86b3a81b0cfb774
+
+Package: XML
+Source: CRAN
+Version: 3.98-1.9
+Hash: 02079c4025bbfa0f63400cc0bb414952
+
+Package: assertthat
+Source: CRAN
+Version: 0.2.0
+Hash: e8805df54c65ac96d50235c44a82615c
+
+Package: binman
+Source: CRAN
+Version: 0.1.0
+Hash: 5da2c054e60e56a67eea59a2b697a6f6
+Requires: assertthat, httr, jsonlite, rappdirs, semver, xml2, yaml
+
+Package: bitops
+Source: CRAN
+Version: 1.0-6
+Hash: 67d0775189fd0041d95abca618c5c07e
+
+Package: caTools
+Source: CRAN
+Version: 1.17.1
+Hash: 97cb6f6293cd18d17df77a6383cc6763
+Requires: bitops
+
+Package: curl
+Source: CRAN
+Version: 2.8.1
+Hash: 5a3f385f21add1e944b93b3cd9ce8b48
 
 Package: digest
 Source: CRAN
@@ -26,9 +69,15 @@ Requires: Rcpp, digest
 
 Package: httpuv
 Source: CRAN
-Version: 1.3.3
-Hash: fb52e8c4b8c89f8a3a3c5da33149c020
+Version: 1.3.5
+Hash: 2cc5284565b71276d1faf3d5c043fe4e
 Requires: Rcpp
+
+Package: httr
+Source: CRAN
+Version: 1.3.1
+Hash: 2d32e01e53d532c812052e27a1021441
+Requires: R6, curl, jsonlite, mime, openssl
 
 Package: jsonlite
 Source: CRAN
@@ -40,24 +89,62 @@ Source: CRAN
 Version: 0.5
 Hash: 463550cf44fb6f0a2359368f42eebe62
 
+Package: openssl
+Source: CRAN
+Version: 0.9.6
+Hash: 5f4711e142a44655dfea4d64fcf2f641
+
 Package: packrat
 Source: CRAN
 Version: 0.4.8-1
 Hash: 6ad605ba7b4b476d84be6632393f5765
 
+Package: rappdirs
+Source: CRAN
+Version: 0.3.1
+Hash: 7340cfebc77ad7b107a549a8635e64dd
+
+Package: semver
+Source: CRAN
+Version: 0.2.0
+Hash: 2eb2029e35bde1a770ad44c5bbbe81db
+Requires: Rcpp, assertthat
+
 Package: shiny
 Source: CRAN
-Version: 1.0.0
-Hash: 315fd5ac8ada4047f81af7c19d5a5974
+Version: 1.0.5
+Hash: 4d47532a807122bfd6bc3818310f9d2e
 Requires: R6, digest, htmltools, httpuv, jsonlite, mime, sourcetools,
     xtable
 
 Package: sourcetools
 Source: CRAN
-Version: 0.1.5
-Hash: 04ddeb1c288302222562326a471e2945
+Version: 0.1.6
+Hash: 226d56d7469587da40b0f96180e711b4
+
+Package: subprocess
+Source: CRAN
+Version: 0.8.0
+Hash: 7b373207cd5fd6ebc471627a0820ab42
+
+Package: wdman
+Source: CRAN
+Version: 0.2.2
+Hash: d6e969002ac36f5c6b7072c121b87caa
+Requires: assertthat, binman, semver, subprocess, yaml
+
+Package: xml2
+Source: CRAN
+Version: 1.1.1
+Hash: 534feed3c69280ec9529f1e54fd6c428
+Requires: BH, Rcpp
 
 Package: xtable
 Source: CRAN
 Version: 1.8-2
 Hash: 7293235cfcc14cdff1ce7fd1a0212031
+
+Package: yaml
+Source: CRAN
+Version: 2.1.14
+Hash: c81230c3a7d9ba20607ad6b4331173d1
