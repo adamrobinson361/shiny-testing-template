@@ -3,14 +3,14 @@ library(RSelenium)
 
 user <- "adamrobinson361" # Your Sauce Labs username
 pass <- "557fd7e6-badb-4989-a531-61502fb9f837" # Your Sauce Labs access key 
-port <- 80
-ip <- paste0(user, ':', pass, "@ondemand.saucelabs.com")
-rdBrowser <- "chrome"
-version <- "33"
-platform <- "OS X 10.9"
-extraCapabilities <- list(name = "RSelenium OS/Browsers vignette first example", username = user
-                          , accessKey = pass, tags = list("RSelenium-vignette", "OS/Browsers-vignette"))
-
+port <- 4445
+ip <- paste0(user, ':', pass, "@localhost")
+rdBrowser <- "firefox"
+version <- "26"
+platform <- "Linux"
+extraCapabilities <- list(name = "RSelenium OS/Browsers vignette second example", username = user
+                          , accessKey = pass, tags = list("RSelenium-vignette", 
+                                                          "OS/Browsers-vignette", "Example 2"))
 remDr <- remoteDriver$new(remoteServerAddr = ip, port = port, browserName = rdBrowser
                           , version = version, platform = platform
                           , extraCapabilities = extraCapabilities)
