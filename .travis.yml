@@ -7,8 +7,7 @@ cache:
     - $TRAVIS_BUILD_DIR/packrat/lib
   packages: true
 script: 
-- R --slave --no-restore -e 'shiny::runApp()'
-- R --slave --no-restore -e 'shiny::stopApp()'
+- R --slave --no-restore -e 'source("saucelabs.R")'
 addons:
   sauce_connect:
     username: adam.robinson@education.gov.uk
