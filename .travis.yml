@@ -10,6 +10,8 @@ cache:
     - $TRAVIS_BUILD_DIR/packrat/src
     - $TRAVIS_BUILD_DIR/packrat/lib
   packages: true
+before_script:
+  - curl https://gist.github.com/santiycr/5139565/raw/sauce_connect_setup.sh | bash
 script: 
   - nohup R --slave --no-restore -e 'shiny::runApp(port = 6012)' &
   - R -f test-basic.R
