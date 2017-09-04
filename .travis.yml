@@ -7,4 +7,4 @@ cache:
     - $TRAVIS_BUILD_DIR/packrat/lib
   packages: true
 script: 
-- R --slave --no-restore -e 'shiny::runApp(".", launch.browser=TRUE)'
+- R --slave --no-restore -e 'shiny::runApp()'
