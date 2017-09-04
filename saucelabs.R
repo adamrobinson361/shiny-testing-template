@@ -1,7 +1,7 @@
 library(RSelenium)
 
-user <- "adam.robinson@education.gov.uk" # Your Sauce Labs username
-pass <- "b73a73fa-980c-4c4a-8497-5f5bd232d0da" # Your Sauce Labs access key 
+user <- "adamrobinson361" # Your Sauce Labs username
+pass <- "557fd7e6-badb-4989-a531-61502fb9f837" # Your Sauce Labs access key 
 port <- 80
 ip <- paste0(user, ':', pass, "@ondemand.saucelabs.com")
 rdBrowser <- "chrome"
