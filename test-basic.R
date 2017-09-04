@@ -14,11 +14,12 @@ remDr <- remoteDriver$new(remoteServerAddr = ip, port = port, browserName = rdBr
                           , version = version, platform = platform
                           , extraCapabilities = extraCapabilities)
 
-testScript <- function(remDr){
-  remDr$open()
-  remDr$navigate("http://127.0.0.1:6012")
-  Sys.sleep(10)
-  remDr$close()
-}
+remDr$open(silent = TRUE)
+appURL <- "http://127.0.0.1:6012"
 
+test_that("can connect to app", {  
+  remDr$navigate(appURL)
+  appTitle <- remDr$getTitle()[[1]]
+  expect_equal(appTitle, "Old Faithful Geyser Data")  
+})
 testScript(remDr)
