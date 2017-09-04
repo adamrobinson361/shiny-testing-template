@@ -9,3 +9,7 @@ cache:
 script: 
 - R --slave --no-restore -e 'shiny::runApp()'
 - R --slave --no-restore -e 'shiny::stopApp()'
+addons:
+  sauce_connect:
+    username: adam.robinson@education.gov.uk
+    access_key: "b73a73fa-980c-4c4a-8497-5f5bd232d0da"
