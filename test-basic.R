@@ -1,5 +1,5 @@
-library(RSelenium)
 library(testthat)
+library(RSelenium)
 
 user <- "adamrobinson361" # Your Sauce Labs username
 pass <- "557fd7e6-badb-4989-a531-61502fb9f837" # Your Sauce Labs access key 
