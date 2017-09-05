@@ -15,5 +15,5 @@ script:
   - R -f test-basic.R
 addons:
   sauce_connect:
-    username: adamrobinson361
-    access_key: "557fd7e6-badb-4989-a531-61502fb9f837"
+    username: $SAUCE_USERNAME
+    access_key: $SAUCE_SECRET_KEY
