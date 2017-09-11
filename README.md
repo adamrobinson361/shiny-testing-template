@@ -1,4 +1,4 @@
-# R Shiny Testing Workflow [![Build Status](https://travis-ci.org/adamrobinson361/travis.svg?branch=master)](https://travis-ci.org/adamrobinson361/travis)
+# R Shiny Testing Workflow [![Build Status](https://travis-ci.org/adamrobinson361/shiny-testing-template.svg?branch=master)](https://travis-ci.org/adamrobinson361/shiny-testing-template)
 
 This R project has been developed to act as a template on how to test GitHub code hosted **[R Shiny](https://shiny.rstudio.com/)** web applications with **[RSelenium](https://github.com/ropensci/RSelenium)**, **[Travis CI](https://travis-ci.org/)** and **[Sauce Labs](https://saucelabs.com/)**. 
 
